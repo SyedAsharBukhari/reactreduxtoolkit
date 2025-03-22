@@ -11,13 +11,14 @@ let reducers = combineReducers({
   fetchApiData: userSlice,
 });
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+// const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 export const store = configureStore(
   {
     reducer: reducers,
   },
-  composeEnhancers(applyMiddleware(thunk))
+  // composeEnhancers(applyMiddleware(thunk))
 );
 
 export default store;
+
